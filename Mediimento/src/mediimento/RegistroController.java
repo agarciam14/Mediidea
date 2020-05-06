@@ -14,19 +14,19 @@ import java.util.ResourceBundle;
 public class RegistroController implements Initializable {
 
     @FXML
-    public TextField name;
+    private TextField name;
     @FXML
-    public TextField apellido;
+    private TextField apellido;
     @FXML
-    public TextField cedula;
+    private TextField cedula;
     @FXML
-    public DatePicker fecha_nacimiento;
+    private DatePicker fecha_nacimiento;
     @FXML
-    public TextField genero;
+    private TextField genero;
     @FXML
-    public TextField peso;
+    private TextField peso;
     @FXML
-    public TextField password;
+    private TextField password;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -44,7 +44,8 @@ public class RegistroController implements Initializable {
         String query= "user_cedula="+cedula+"&user_fecha="+fecha_nacimiento.toString()+"&user_nombre="+name+
                 "&user_apellido="+apellido+"&user_genero="+genero+"&user_peso="+peso+"&user_contraseña="+password;
         try {
-            DBConnector.getDatosServer(query,"crearUsuario");
+            System.out.println(DBConnector.getDatosServer(query,"crearUsuario"));
+            Main.cambiarVista("Login.fxml",actionEvent);
         } catch (IOException e) {
             System.out.println("Error al crear usuario");
         }

@@ -24,7 +24,7 @@ public class Main extends Application {
         launch(args);
     }
 
-    public static void cambiarVista(String filename, ActionEvent actionEvent) throws IOException {
+    protected static void cambiarVista(String filename, ActionEvent actionEvent) throws IOException {
         Parent file = FXMLLoader.load(Main.class.getResource(filename));
         Scene scene = new Scene(file);
 

@@ -14,28 +14,28 @@ import java.util.ResourceBundle;
 public class EditarController implements Initializable {
 
     @FXML
-    public TextField name;
+    private TextField name;
     @FXML
-    public TextField apellido;
+    private TextField apellido;
     @FXML
-    public TextField cedula;
+    private TextField cedula;
     @FXML
-    public DatePicker fecha_nacimiento;
+    private DatePicker fecha_nacimiento;
     @FXML
-    public TextField genero;
+    private TextField genero;
     @FXML
-    public TextField peso;
+    private TextField peso;
     @FXML
-    public TextField password;
+    private TextField password;
     @FXML
-    public TextField passwordn;
+    private TextField passwordn;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
     }
 
 
-    public void registrar(ActionEvent actionEvent) {
+    public void editar(ActionEvent actionEvent) {
         String name = this.name.getText();
         String apellido = this.name.getText();
         String cedula = this.cedula.getText();
