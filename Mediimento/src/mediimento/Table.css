@@ -1,0 +1,5 @@
+.table-view .cell{ // modificas de la tabla los parámetros de cada celda
+-fx-wrap-text: true;  /*estableces que el texto dentro del label de la celda pueda ser divido en partes*/
+-fx-cell-size: 200px ;/* fijas la altura de la celda. Prueba con varios valores para que veas el efecto*/
+
+ }

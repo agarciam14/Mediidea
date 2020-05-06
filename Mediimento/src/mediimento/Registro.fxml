@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="586.0" prefWidth="626.0" style="-fx-background-color: #212F3C;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediimento.RegistroController">
+   <children>
+      <Pane layoutX="146.0" layoutY="21.0" prefHeight="533.0" prefWidth="334.0" style="-fx-background-color: #2E4053;">
+         <children>
+            <VBox layoutX="46.0" layoutY="80.0" prefHeight="318.0" prefWidth="243.0">
+               <children>
+                  <TextField fx:id="name" prefHeight="26.0" prefWidth="187.0" promptText="Nombre">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin></TextField>
+                  <TextField fx:id="apellido" prefHeight="26.0" prefWidth="187.0" promptText="Apellido">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin></TextField>
+                  <TextField fx:id="cedula" prefHeight="26.0" prefWidth="187.0" promptText="Cedula">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin></TextField>
+                  <DatePicker fx:id="fecha_nacimiento" prefHeight="26.0" prefWidth="250.0" promptText="Fecha de Nacimiento">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <TextField fx:id="genero" prefHeight="26.0" prefWidth="187.0" promptText="Genero">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin></TextField>
+                  <TextField fx:id="peso" prefHeight="26.0" prefWidth="187.0" promptText="Peso">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin></TextField>
+                  <TextField fx:id="password" prefHeight="26.0" prefWidth="187.0" promptText="Contraseña">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin></TextField>
+               </children></VBox>
+            <Label layoutX="122.0" layoutY="41.0" text="REGISTRO" textAlignment="CENTER" textFill="#ffffffed">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <HBox layoutX="68.0" layoutY="398.0" prefHeight="54.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#registrar" prefHeight="26.0" prefWidth="273.0" style="-fx-background-color: #680303;" text="Registrar" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Button layoutX="127.0" layoutY="452.0" mnemonicParsing="false" onAction="#volver" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #680303;" text="Volver" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
