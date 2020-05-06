@@ -47,5 +47,4 @@ public class LoginController implements Initializable {
     private void handleUp(ActionEvent actionEvent) throws IOException {
         Main.cambiarVista("Registro.fxml", actionEvent);
     }
-
 }
