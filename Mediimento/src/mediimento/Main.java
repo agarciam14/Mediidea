@@ -12,6 +12,9 @@ import java.io.IOException;
 
 public class Main extends Application {
 
+    private static String user;
+    private static String contrasena;
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
@@ -31,5 +34,21 @@ public class Main extends Application {
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
+    }
+
+    public static String getUser() {
+        return user;
+    }
+
+    public static void setUser(String user) {
+        Main.user = user;
+    }
+
+    public static String getContrasena() {
+        return contrasena;
+    }
+
+    public static void setContrasena(String contrasena) {
+        Main.contrasena = contrasena;
     }
 }

@@ -22,7 +22,7 @@
                   <Font name="System Bold Italic" size="12.0" />
                </font>
             </Label>
-            <Button layoutX="45.0" layoutY="271.0" mnemonicParsing="false" onAction="#recordatorio" prefHeight="38.0" prefWidth="196.0" text="ALARMA" />
+            <Button layoutX="45.0" layoutY="271.0" mnemonicParsing="false" onAction="#recordatorio" prefHeight="38.0" prefWidth="196.0" text="RECORDATORIOS" />
             <Button layoutX="45.0" layoutY="216.0" mnemonicParsing="false" onAction="#medicamentos" prefHeight="38.0" prefWidth="196.0" text="LISTA DE MEDICAMENTOS" />
             <Button layoutX="45.0" layoutY="327.0" mnemonicParsing="false" onAction="#editar" prefHeight="38.0" prefWidth="196.0" text="EDITAR USUARIO" />
             <Button layoutX="45.0" layoutY="390.0" mnemonicParsing="false" onAction="#salir" prefHeight="38.0" prefWidth="196.0" text="SALIR" />

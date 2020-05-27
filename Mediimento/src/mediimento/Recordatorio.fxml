@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediimento.RecordatorioController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="627.0" prefWidth="1090.0" style="-fx-background-color: #292828;">
+            <children>
+                <TableView fx:id="table" layoutX="42.0" layoutY="30.0" prefHeight="461.0" prefWidth="754.0" style="-fx-background-color: #E5DFDF; -fx-border-color: #000000;" stylesheets="" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="20.0">
+                    <columns>
+                        <TableColumn fx:id="col_nombre" prefWidth="120.1999740600586" resizable="false" text="Medicamento" />
+                        <TableColumn fx:id="col_fecha_ini" prefWidth="120.60000610351562" text="Fecha Inicial" />
+                        <TableColumn fx:id="col_fecha_fin" prefWidth="120.60000610351562" text="Fecha Final" />
+                        <TableColumn fx:id="col_hora" prefWidth="180.60000610351562" text="Hora de consumo" />
+                        <TableColumn fx:id="col_lunes" prefWidth="30.0" resizable="false" text="L" />
+                        <TableColumn fx:id="col_martes" prefWidth="30.0" resizable="false" text="M" />
+                        <TableColumn fx:id="col_miercoles" prefWidth="30.0" resizable="false" text="W" />
+                        <TableColumn fx:id="col_jueves" prefWidth="30.0" resizable="false" text="J" />
+                        <TableColumn fx:id="col_viernes" prefWidth="30.0" resizable="false" text="V" />
+                        <TableColumn fx:id="col_sabado" prefWidth="30.0" resizable="false" text="S" />
+                        <TableColumn fx:id="col_domingo" prefWidth="30.0" resizable="false" text="D" />
+                    </columns>
+                </TableView>
+                <Button layoutX="446.0" layoutY="563.0" mnemonicParsing="false" onAction="#Volver" prefHeight="31.0" prefWidth="69.0" text="Volver">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+            <Button layoutX="577.0" layoutY="563.0" mnemonicParsing="false" onAction="#Crear" prefHeight="31.0" prefWidth="69.0" text="Crear">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+            </padding>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+    </children>
+</GridPane>

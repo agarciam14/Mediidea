@@ -15,7 +15,6 @@ public class DBConnector {
         }else{
             url = new URL("http://ec2-35-173-204-107.compute-1.amazonaws.com/" + tipoConexion + ".php" + "?" + data );
         }
-
         HttpURLConnection sever = (HttpURLConnection) url.openConnection();
         sever.setRequestMethod("POST");
         BufferedReader reader = new BufferedReader(new InputStreamReader(sever.getInputStream()));

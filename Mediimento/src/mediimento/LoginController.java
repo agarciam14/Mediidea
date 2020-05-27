@@ -32,6 +32,8 @@ public class LoginController implements Initializable {
     private void handleIn(ActionEvent actionEvent) throws IOException{
         String cedula = this.cedula.getText();
         String pass = this.pass.getText();
+        Main.setContrasena(pass);
+        Main.setUser(cedula);
         String query= "user_cedula="+cedula+"&user_contraseña="+pass;
         String connect = DBConnector.getDatosServer(query,"iniciarSesion");
         if(!connect.equals("null")){
@@ -46,5 +48,13 @@ public class LoginController implements Initializable {
     @FXML
     private void handleUp(ActionEvent actionEvent) throws IOException {
         Main.cambiarVista("Registro.fxml", actionEvent);
+    }
+
+    public String getCedula() {
+        return cedula.getText();
+    }
+
+    public String getPass() {
+        return pass.getText();
     }
 }

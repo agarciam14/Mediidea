@@ -32,7 +32,8 @@ public class HomeController implements Initializable {
     }    
 
     @FXML
-    private void recordatorio(ActionEvent event) {
+    private void recordatorio(ActionEvent actionEvent) throws IOException{
+        Main.cambiarVista("Recordatorio.fxml",actionEvent);
     }
 
     @FXML

@@ -38,7 +38,7 @@ public class EditarController implements Initializable {
     public void registrar(ActionEvent actionEvent) throws IOException {
         String name = this.name.getText();
         String apellido = this.name.getText();
-        String cedula = "1001618075";
+        String cedula = Main.getUser();
         String fecha_nacimiento = Date.valueOf(this.fecha_nacimiento.getValue()).toString();
         String genero = this.genero.getText();
         String peso = this.genero.getText();
